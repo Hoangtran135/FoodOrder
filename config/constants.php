@@ -5,7 +5,7 @@ if (strpos($_SERVER['SCRIPT_NAME'], 'admin') !== false) {
     session_name('user_session'); // Đặt tên session riêng cho user
 }
 session_start();
-define('SITEURL', 'http://localhost/Foodordering/');
+define('SITEURL', 'http://localhost/Foodorder/');
 define('LOCALHOST', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
