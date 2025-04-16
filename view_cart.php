@@ -194,7 +194,9 @@ textarea {
 <h2>Giỏ hàng của bạn</h2>
 <form action="payment.php" method="post">
     <div class="cart-container">
-        <?php if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) { ?>
+        <?php
+$total_price = 0;
+if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) { ?>
             <table class='table'>
                 <tr>
                     <th>Sản phẩm</th>
